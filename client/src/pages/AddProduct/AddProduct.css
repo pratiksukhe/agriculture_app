@@ -1,0 +1,55 @@
+/* ============================================
+   Add Product Form Page Styles
+   ============================================ */
+
+.add-product-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.form-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.form-header h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--gray-800);
+  letter-spacing: -0.02em;
+}
+
+.product-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .add-product-page {
+    padding: 1rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .crops-input-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-actions {
+    flex-direction: column-reverse;
+  }
+
+  .form-actions .btn-outline,
+  .form-actions .btn-submit {
+    width: 100%;
+    justify-content: center;
+  }
+}

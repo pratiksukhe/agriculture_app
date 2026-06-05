@@ -1,0 +1,197 @@
+/* ============================================
+   Form Components
+   ============================================ */
+
+.form-section {
+  background: white;
+  border: 1.5px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+}
+
+.form-section legend {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--gray-800);
+  padding: 0 0.5rem;
+}
+
+.legend-icon {
+  font-size: 1.1rem;
+}
+
+.form-group {
+  margin-top: 1rem;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--gray-600);
+  margin-bottom: 0.35rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.6rem 0.85rem;
+  border: 1.5px solid var(--gray-200);
+  border-radius: var(--radius-sm);
+  font-family: inherit;
+  font-size: 0.875rem;
+  color: var(--gray-800);
+  transition: all 0.2s;
+  background: var(--gray-50);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--green-400);
+  box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.1);
+  background: white;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* Dynamic Rows */
+.dynamic-row {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  align-items: stretch;
+}
+
+.dynamic-row input {
+  flex: 1;
+  padding: 0.55rem 0.75rem;
+  border: 1.5px solid var(--gray-200);
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 0.85rem;
+  background: var(--gray-50);
+  transition: all 0.2s;
+}
+
+.dynamic-row input:focus {
+  outline: none;
+  border-color: var(--green-400);
+  box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.1);
+  background: white;
+}
+
+.input-small {
+  max-width: 100px !important;
+}
+
+.crops-input-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.crop-row {
+  margin-top: 0;
+}
+
+/* Image Upload */
+.image-upload-area {
+  margin-top: 0.5rem;
+}
+
+.file-input-hidden {
+  display: none !important;
+}
+
+.upload-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 2rem;
+  border: 2px dashed var(--gray-300);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  color: var(--gray-400);
+  transition: all 0.2s;
+  text-align: center;
+}
+
+.upload-label:hover {
+  border-color: var(--green-400);
+  color: var(--green-600);
+  background: var(--green-50);
+}
+
+.upload-label span {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.upload-hint {
+  font-size: 0.7rem !important;
+  color: var(--gray-400) !important;
+}
+
+.image-preview {
+  position: relative;
+  display: inline-block;
+}
+
+.image-preview img {
+  max-width: 200px;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-remove-image {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--danger);
+  color: white;
+  border: 2px solid white;
+  border-radius: 50%;
+  font-size: 0.7rem;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+}
+
+/* Form Actions */
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  padding-top: 0.5rem;
+}
+
+.btn-submit {
+  padding: 0.75rem 2rem !important;
+  font-size: 0.95rem !important;
+}
+
+.btn-submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
