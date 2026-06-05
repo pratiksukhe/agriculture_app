@@ -11,7 +11,8 @@ build/
 .env.*.local
 
 # Upload directory
-server/uploads/
+server/uploads/*
+!server/uploads/.gitkeep
 
 # IDE
 .vscode/
